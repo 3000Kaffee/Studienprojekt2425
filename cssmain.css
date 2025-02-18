@@ -1,0 +1,86 @@
+
+    body {
+      font-family: Courier, monospace;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+
+    #video1 {
+      display: flex;
+      justify-content: center; /* Horizontal zentrieren */
+      align-items: center;      /* Vertikal zentrieren */
+    
+    }
+
+
+    #video2 {
+      display: flex;
+      justify-content: center; /* Horizontal zentrieren */
+      align-items: center;      /* Vertikal zentrieren */
+      /* Volle Höhe des Viewports */
+    }
+
+    #video13 {
+      display: flex;
+      justify-content: center; /* Horizontal zentrieren */
+      align-items: center;      /* Vertikal zentrieren */
+      * Volle Höhe des Viewports */
+    }
+    
+    header {
+      background-color: #333;
+      color: #f6ff50;s
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+    }
+
+
+  
+    nav {
+      font-family: Courier, monospace;
+      font-size: 10px;
+      padding: 0px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      border-bottom: 2px solid #ccc;
+    }
+    nav a {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    nav a:hover {
+      background-color: #e0e0e0;
+    }
+    nav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    main {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
