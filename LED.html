@@ -5,64 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Licht</title>
     <link rel="stylesheet" href="cssmain.css">
-    <script src="tsmain.ts"></script>  
+    <script src="script.js"></script>  
 </head>
 <body>
     <nav> 
        
-        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a> <a href="Projekt.html"><h1>Das Projekt</h1></a>  <a href="TOUCHDESIGNER.html"><h1>TOUCHDESIGNER</h1></a>
+        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a> <a href="Projekt.html"><h1>Das Projekt</h1></a>  <a href="TOUCHDESIGNER.html"><h1>TIPPS</h1></a>
     </nav>
+    
+    <h1>LED Technik</h1>
+    <video id="v1" src="./Bilder/camvideo_d352166b.mov" autoplay loop muted width="100%" height="100%"></video><p></p>
+<div>
+ 
+    Ist günstig, flexibel und hat eine riesige Community die Open Source Projekte zur Verfügung stellt. Für den Anfang im Veranstaltungsbereich ist LED-Technik sehr zu empfehlen, da man deutlich weniger Ausgaben hat als bei DMX, da immer ein Lichtpult notwendig ist. 
+    LED Technik (light-emitting, diode) verbreitet sich immer mehr der Veranstaltungsszene. Für Bastler weitaus interessanter als DMX Technik, sind die Eigenschaften der LED Streifen durch die man besonders kreative Lampen bauen kann. Durch die Flexibälität von LED Streifen können einzigartige Lampen gebaut werden.
+    
+    
+    <h2>LED Schutzklassen</h2> 
 
-    <div class="grid">
-        <div class="overflow-hidden rounded-2xl shadow-lg" id="video1">
-          <iframe
-            width="70%"
-            height="300"
-        
-            src="https://www.youtube.com/embed/R3U0_gic4fE"
-      
-            title="Video 1"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-          <div class="p-4">
-            <p></p>
-            <h2 class="text-xl font-semibold">Video 1</h2>
-          </div>
-        </div>
+Es gibt drei verschieden Schutzklassen bei LEDs IP30, IP60 und IP65. Bei der Auswahl der verwendeten LEDs hängt der Einsatzort und deren mögliche Belastungen ab.
+IP 30: kein Schutz vor Wasser
+IP60: beschichtet mit Silikon, daher etwas schwieriger zu schneiden und zu verlöten
+IP67 ummantelt von einem festen Schlauch
+</div>
+
+
+<h2 style="text-align:center;">Vor- und Nachteile von LED-Technologie</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Vorteile</th>
+      <th>Nachteile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kostengünstig</td>
+      <td>Manchmal geringer CRI-Wert (Color Rendering Index)</td>
+    </tr>
+    <tr>
+      <td>Flexibel</td>
+      <td>Steuerung nicht so präzise wie bei DMX</td>
+    </tr>
+    <tr>
+      <td>Plug & Play</td>
+      <td>Bei eigener Programmierung muss viel angepasst werden</td>
+    </tr>
+    <tr>
+      <td>Große Kompatibilität von verschiedenen Softwares</td>
+      <td>Streulicht und Blendwirkung ohne Diffusor</td>
+    </tr>
+    <tr>
+      <td>Energiesparend im Vergleich zu herkömmlichen Lampen</td>
+      <td>Flimmern bei Videoaufnahmen</td>
+    </tr>
+    <tr>
+      <td>Langlebigkeit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unbegrenzte ansteuerbare LEDs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Große Community mit vielen Open-Source-Projekten</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anfängerfreundlich</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kaum Wartungen</td>
+      <td></td>
+    </tr>
     <p></p>
-        <div class="overflow-hidden rounded-2xl shadow-lg" id="video2">
-          <iframe
-            width="70%"
-            height="300"
-    
-            src="https://www.youtube.com/embed/ShYYcr30vJw"
-            title="Video 2"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-          <div class="p-4">
-            <p></p>
-            <h2 class="text-xl font-semibold">Video 2</h2>
-          </div>
-    <p></p>
-          <div class="overflow-hidden rounded-2xl shadow-lg" id="video3">
-            <iframe
-              width="70%"
-              height="300"
-              src="https://www.youtube.com/watch?v=XLeghJmFBh0"
-              title="Video 3"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-            <div class="p-4">
-              <p></p>
-              <h2 class="text-xl font-semibold">Video 3</h2>
-            </div>
-        </div>
-    
+   
 </body>
+
+
+  
+  </div>
+
 </html>

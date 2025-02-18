@@ -10,14 +10,41 @@
 
 
 
-
 <body>
     <nav> 
        
-        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a> <a href="Projekt.html"><h1>Das Projekt</h1></a>  <a href="TOUCHDESIGNER.html"><h1>TOUCHDESIGNER</h1></a>
+        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a> <a href="Projekt.html"><h1>Das Projekt</h1></a>  <a href="Tipps.html"><h1>TIPPS</h1></a>
     </nav>
-<p></p>
 
+<div class="container">
+    <video controls class="video">
+      <source src="Bilder/2025-02-18 12.27.05.mov" heigt="50%" width="50%"  type="video/quicktime">
+     
+    </video>
+    <div class="text">
+      <h2>Lichtinstallation für die "Movement"</h2>
+      <p>Für die "Movement", eine Queer Party in Freiburg, wurde in Zusammenarbeit mit der Bretterbude e.V. eine Lichtinstallation entworfen.
+         Hierfür wurden LED-Streifen in Abgasschläuche gepackt, die als Diffusor agierten. Angesteuert wurden diese 
+         LED-Steifen über Touchdesigner und ESP 32. <p></p>
+
+         
+        <h2>Zum selbst nachbauen</h2></p>
+        
+        Bevor wir mit der Software loslegen, müssen wir die Hardware mit Stromversorgen. Hierzu ein Video von -> <p></p>
+        <a id="ESP32" href="https://www.youtube.com/watch?v=263r4vGncBU"> ESP32 mit Stromversorgen </a> <p></p>
+
+        Als erstes muss WLED auf dem ESP32 installiert werden. Hierzu ein Video von -> <p></p>
+        <a id="wled" href="https://www.youtube.com/embed/R3U0_gic4fE"> WLED INSTALLIEREN </a> <p></p>
+        Die LED Streifen laufen mit 5V und brauchen eine Stromzufuhr. Diese kommt durch die Netzteile. LEDs laufen bis 10m gelichbleibend bei 5V. Längere Strecken sollten vermieden werden, da es sonst zu einem Spannungsabfall kommt.
+        Der ESP hingegen läuft mit 3,3V. Der Minus-Pol wird auf den Ground angeschlossen und der Plus Pol auf den Vin. Hier wird eine Spannung von 7 bis 12V benötigt.
+        Wichtig ist, dass alle Stromkreise die gleiche Masse, also 0V nutzen!
+        Alternativ, den Plus-Pol an den 5V anschließen, der Strom läuft dann nicht über den Spannungswandler. <p></p>
+
+        Ist WLED auf dem ESP 32 installiert kann alles per WLED App gesteuert werden. Einfach praktikabel und große Wirkung! <p></p>
+      
+       
+    </div>
+  </div>
 
 <p></p>
 <table border="1">
@@ -97,30 +124,29 @@
       <tr>
         <td>1</td>
         <td>MIDI Controller</td>
-        <td></td>
+        <td>Rolans Aira S1</td>
       </tr>
     </tbody>
   </table>
   
 
-Zum selbst nachbauen</p>
-Als erstes muss WLED auf dem ESP32 installiert werden. Hier zu ein Video von ->
-Die LED Streifen laufen mit 5V und brauchen eine Stromzufuhr diese kommt durch die Netzteile. LEDs laufen bis 10m gelichbleibend bei5 V. Längere Strecken sollten vermieden werden da es sonst zu einem Stromabfall kommt.
-Der ESP hingegen läuft mit 3,3V Der Minus Pol wird auf den Ground angeschlossen und der Plus Pol auf den Vin. Spannung von 7 bis 12V benötigt.
-Wichtig ist dass alles alle Stromkreise die gleiche Masse also 0V nutzen!
-Andere Möglichkeit ist den Plus Pol an den 5V anzuschließen der Strom läuft dann nicht über den Spannungswandler
-</p>
+
 Touchdesigner:</p>
 
-Für die Effekte werden zwei Farben genommen, beliebig erweiterba.
-Um die Farbe mit einem Midi Board einstellen zu können benötigen wir als erstes eine Constant. Die Color Werte RGB werden dann auf verschiedenen Regler des Controllers gemappt. (Midi IN gewählter Kanal -> Constant -> Math (Range einstelllen) -> Null)
-Mit dem Wert des Nulls wird in der Constant ein Wert 0 bis 1 eingestellt und den Chop referenziert
-Danach wird die Constant mit einer Ramp verbunden. In der Ramp nehmen wir ein Weiß (Sat:0 Value: 1 Alpha 1), dies wird von der Constant nach der gewünschten Farbe eingefärbt. Daas Wie? Begrenzen wir mit den Reglen und einen Schwarz (Sat:0 Value: 0 Alpha 1) Über den Abstand stellen wir ein wie viel LEDs angesteuert werden.
-Für verschiedene Laufeffekte nutzen wir den Type ( Horizonzal, Radial und Circular (Vertical macht nur mit Pixelgrid Sinn da ). Hier empfielt es sich ein Radio Button zu bauen und zwischen den 4 Zuständen wechseln zu können.
+Ist WLED auf dem ESP 32 installiert kann man nach diesem Video sich orientieren. -> <p></p>
+
+
+
+Für die Effekte wurden zwei Farben genommen (beliebig erweiterbar).
+Um die Farbe mit einem Midi Board einstellen zu können, benötigen wir als erstes eine "Constant". Die Color-Werte (RGB) werden dann auf verschiedenen Reglern des Controllers gemappt. (Midi IN gewählter Kanal -> Constant -> Math (Range einstelllen) -> Null)
+Mit dem Wert des "Nulls", wird in der "Constant" ein Wert 0 bis 1 eingestellt und der "Chop-Wert" als Referenzwert genommen.
+Danach wird die Constant mit einer  "Ramp" verbunden. In der Ramp nehmen wir ein Weiß als Regler(Sat:0 Value: 1 Alpha 1), dies wird von der Constant nach der gewünschten Farbe eingefärbt. Um den Abstand zu begrenzen, nehmen wir zwei Regler mit der Farbe Schwarz an(Sat:0 Value: 0 Alpha 1).
+Über die Größe Abstandes stellen wir ein, wie viele LEDs angesteuert werden.
+Für verschiedenen Laufeffekte nutzen wir den Type ( Horizonzal, Radial und Circular (Vertical macht nur mit Pixelgrid Sinn da ). Hier empfielt es sich, ein Radio Button zu bauen um zwischen den 4 Zuständen wechseln zu können.
 
 Weitere Effekte </p>
 Limit: Quantize Postition auf Celling 
-Den Position Step als Regler refrenzieren damit kann man ein Aufblinken verschiedener Einheiten erstellen. Desto höher der Wert desto größer der Teil des LED- Streif
+Den "Position Step" als Regler refrenzieren damit kann man ein Aufblinken verschiedener Einheiten erstellen. Desto höher der Wert desto größer der Teil des LED- Streif
 Scale UP Performance
 Veranstaltungen kann man nicht wiederholen. Heißt es braucht immer eine sorgfältige Vorbereitung vorallem.für Anfänger. Bevor man ein Veranstaltung macht sollte man im kleinen Maßstab das Licht testen. Heißt Testläufe mit den Lampen am besten schon vorprogrammieren (Patchplan) oder diesem Fall alle LED Streifen über Ethernet Anschluss 
 

@@ -10,22 +10,31 @@
 
     <nav> 
        
-        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a> <a href="Projekt.html"><h1>Das Projekt</h1></a>  <a href="TOUCHDESIGNER.html"><h1>TOUCHDESIGNER</h1></a>
+        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a> <a href="Projekt.html"><h1>Das Projekt</h1></a>  <a href="Tipps.html"><h1>TIPPS</h1></a>
     </nav>
-    <p></p>
-    <div>
-    <h1>Was ist DMX</h1><p>
+<h1>Was ist DMX?</h1>
+        <div class="container">
+            <div class="text">
+                
+                Die weitverbreitetste Technik in der Veranstaltungsbranche, um Lampen und Nebelmaschinen steuern 
+                (Bewegung, Farbe, Dimmer und Effekte) zu können ist DMX (Digital Multiplex). Es ist ein digitales Steuerprotokoll 
+                (DMX-512) das 1986 in den USA entwickelt wurde. Die aktuelle Spezifikation ist DMX-512 nach dem USITT-Standard 
+                bzw. der DIN-Norm. Es basiert auf RS-485, (eine physische Schnittstelle für die asynchrone serielle Datenübertragung)
+                verwendet wird. Ein symmetrisches Übertragungsverfahren, wobei die differenziellen Pegel  zwischen ±1,5 V und ±5 V liegen. 
+                Gleichtaktspannungen zwischen −7 V und +12 V müssen toleriert werden.
+                Die Datenübertragung erfolgt binär in Form mit den Zuständen 0 und 1. Da das Maximum eines DMX-Universums 512 Kanäle umfasst (Heißt 512 Nachrichten pro Universum können auf einmal geschickt werden) und maximal 32 Empfänger versorgt werden können. Der Kabelweg darf nicht verzweigt sein und auch nicht länger als 500m für eine fehlerfreie Übertragung. Jeder Kanal verfügt über einen Wert von 0 bis 255.
+            
+            </div>
+            <div class="image">
+              <img src="./Bilder/Katrin_Gosse_19 2.jpg" width="60%" height="60%" alt="">
+            </div>
+          </div>
+    
+       
     </p>
-    Die weitverbreitetste Technik in der Veranstaltungsbranche, um Lampen und Nebelmaschinen steuern 
-    (Bewegung, Farbe, Dimmer und Effekte) zu können ist DMX (Digital Multiplex). Es ist ein digitales Steuerprotokoll 
-    (DMX-512) das 1986 in den USA entwickelt wurde. Die aktuelle Spezifikation ist DMX-512 nach dem USITT-Standard 
-    bzw. der DIN-Norm. Es basiert auf RS-485, (eine physische Schnittstelle für die asynchrone serielle Datenübertragung)
-    verwendet wird. Ein symmetrisches Übertragungsverfahren, wobei die differenziellen Pegel  zwischen ±1,5 V und ±5 V liegen. 
-    Gleichtaktspannungen zwischen −7 V und +12 V müssen toleriert werden.
-    Die Datenübertragung erfolgt binär in Form mit den Zuständen 0 und 1. Da das Maximum eines DMX-Universums 512 Kanäle umfasst (Heißt 512 Nachrichten pro Universum können auf einmal geschickt werden) und maximal 32 Empfänger versorgt werden können. Der Kabelweg darf nicht verzweigt sein und auch nicht länger als 500m für eine fehlerfreie Übertragung. Jeder Kanal verfügt über einen Wert von 0 bis 255.
-<p></p>
+   
 </div>
-
+<p></p>
 <div>
 <h2>3 und 5 polige XLR Stecker</h2>
 <!DOCTYPE html>
@@ -86,20 +95,71 @@
         </tr>
     </table>
 
-    
-    <p>Verkabelung der Lampen mit DMX-Kabeln ist durch das Daisy- Chain Prinzip relativ einfach: Jeder Empfänger besitz eine Ein- und Ausgangbuchse. Ausgehend vom Sender aus (Lichtpult) wird die DMX-Leitung zu den Empfängern durchgeschleift. Es ist unwichtig an welcher Stelle sich der Empfänger befindet, die Adressierung muss lediglich eingestellt werden</p>
+    <p>Verkabelung der Lampen mit DMX-Kabeln ist durch das Daisy- Chain Prinzip relativ einfach: Jeder Empfänger besitzt eine Ein- und Ausgangbuchse. Ausgehend vom Sender aus (Lichtpult), wird die DMX-Leitung zu den Empfängern durchgeschleift. Es ist unwichtig an welcher Stelle sich der Empfänger befindet, die Adressierung muss lediglich eingestellt werden</p>
 <p></p>
     <div>
         Bild Female Male Anschlüsse
         Verkabelung der Lampen mit DMX-Kabeln ist durch das Daisy- Chain Prinzip relativ einfach: Jeder Empfänger besitz eine Ein- und Ausgangbuchse. Ausgehend vom Sender aus (Lichtpult) wird die DMX-Leitung zu den Empfängern durchgeschleift. Es ist unwichtig an welcher Stelle sich der Empfänger befindet, die Adressierung muss lediglich eingestellt werden. 
         </div><p></p>
         <div> <h2>Das Patchen der Lampen</h2><p></p>
-            <p>Beim Patchen der Lampen wird dem Chanel Modus die Adresse der Lampe zugewiesen. Anschließend werden diese in der jeweiligen Software gespeichert. 
-                Die Lampen werden meist dann direkt in Gruppen unterteilt, um diese später gemeinsam ansteuern zu können.
+            <p>Beim Patchen der Lampen wird dem Chanel-Modus die Adresse der Lampe zugewiesen. Anschließend werden diese in der jeweiligen Software gespeichert. 
+                Die Lampen werden meistens in Gruppen unterteilt, um diese später gemeinsam ansteuern zu können.
                 Das Patchen ist von System zu System unterschiedlich und gehört oft zu den größten Schwierigkeiten am Anfang. 
         
                 </p>
         <p></p>
+
+        <div>
+            <h2>Was macht der Chanel Modus?</h2>
+            Komplexe Lampen haben unterschiedliche Modis. Ein Beispiel ist die PURElight LED BAR 18 18x 3W RGB mit 18 Leuchteinheiten. Der 3 Chanel Modus ist ein einfacher Dimmer für R,G,B (Rot, Grün, Blau). Im 7CH Modus kommt ein Master-Dimmer hinzu und weitere Effekte wie
+            Dimmer, Strobo, Musikeffekte, Manuelles Dimmen, Integrierte Effekte, Musiksteuerung und Einstellung Geschwindigkeit. 13 CH-Modus kann man einzelne Elemente der Lampe zusätzlich ansteuern.
+            Dieser Schritt ist sehr wichtig zu verstehen! Bei vielen Lichtcontrollern gibt es vorgefertigte Profile der jeweiligen Lampen, ist dies aber nicht der Fall, muss man diese selbst anlegen. Zur Überprüfung des Zustandes der Lampe, kann man mit dieser Methode gezielt Channel ansteuern und deren Funktion überprüfen. In dem Fall der LED- Bar könnte die LED für Blau kaputt sein, vor allem bei Farbmischungen bei dem diese Farbe mit ist, wird es als sehr stören empfunden. Oft kann man solche Lampen nicht in die Lichtshow mit einbauen, hier bietet sich es sich an die Lampe auf einen statischen Modus zustellen (nicht in der Lichtshow integriert) die zur Ausleuchtung genutz wird wie zum Beispiel für eine DJ Booth.
+            
+            <p></p>!Hinweis! Die Kanalbelegung ist in den Bedienungsanleitungen der Lampen zu finden. Am besten vor dem Kauf checken, ob so ein Handbuch vorhanden ist.
+            </div>
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Vorteile</th>
+                <th>Nachteile</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Präzise Steuerung der Farben, Helligkeit und Bewegung</td>
+                <td>Adressierung der Geräte mit Channel kann gerade am Anfang zu Fehlern führen</td>
+              </tr>
+              <tr>
+                <td>Sicherheit (kein Selbstbasteln mit Elektronik, Lampen haben Haken für Saftys)</td>
+                <td>Begrenzte 512 Kanäle pro Universum -> LED-Technik wie LED-Streifen sind bei 170 LEDs schon voll</td>
+              </tr>
+              <tr>
+                <td>Professionelle Technik für Veranstaltungen nach DIN-Norm</td>
+                <td>Begrenzung von bis zu 32 Lampen pro Universum</td>
+              </tr>
+              <tr>
+                <td>Übersichtlich -> Ausschlussverfahren bei der Fehlersuche nach Reihenfolge</td>
+                <td>Steuereinheiten sind sehr teuer</td>
+              </tr>
+              <tr>
+                <td>Anpassung</td>
+                <td>Wartungsaufwand -> Reparaturen sind sehr aufwendig</td>
+              </tr>
+              <tr>
+                <td>Leichterer Einstieg als bei LED</td>
+                <td>Programmierung mit verschiedenen Softwares (z.B. TouchDesigner) braucht lange Einarbeitungszeit</td>
+              </tr>
+              <tr>
+                <td>Patches für Lampen meist vorhanden</td>
+                <td>Fehleranfälligkeit bei den Kabeln</td>
+              </tr>
+              <tr>
+                <td>Moderne Lichtpunkte (z.B. Wolfmix) haben integrierte Effekte, die auf die Musik angepasst sind</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          
 
     </div>
 <link rel="stylesheet" href="LED.html">
