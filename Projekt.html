@@ -130,19 +130,37 @@
   </table>
   
 
-
+<div>
 Touchdesigner:</p>
 
+Möchte man die LED Streifen präzise steuern kann man Touchdesigner hierfür nutzen. Touchdesigner ist eine Software, die für die Echtzeitverarbeitung und -interaktion mit Video, Audio und Grafiken entwickelt wurde. <p></p>
 Ist WLED auf dem ESP 32 installiert kann man nach diesem Video sich orientieren. -> <p></p>
 
+
+
+<a id="Td" href="https://www.youtube.com/watch?v=ShYYcr30vJw&t=125s"> LEDs in Touchdesginer </a> <p></p>
 
 
 Für die Effekte wurden zwei Farben genommen (beliebig erweiterbar).
 Um die Farbe mit einem Midi Board einstellen zu können, benötigen wir als erstes eine "Constant". Die Color-Werte (RGB) werden dann auf verschiedenen Reglern des Controllers gemappt. (Midi IN gewählter Kanal -> Constant -> Math (Range einstelllen) -> Null)
 Mit dem Wert des "Nulls", wird in der "Constant" ein Wert 0 bis 1 eingestellt und der "Chop-Wert" als Referenzwert genommen.
-Danach wird die Constant mit einer  "Ramp" verbunden. In der Ramp nehmen wir ein Weiß als Regler(Sat:0 Value: 1 Alpha 1), dies wird von der Constant nach der gewünschten Farbe eingefärbt. Um den Abstand zu begrenzen, nehmen wir zwei Regler mit der Farbe Schwarz an(Sat:0 Value: 0 Alpha 1).
+Danach wird die Constant mit einer  "Ramp" verbunden. In der Ramp nehmen wir ein Weiß als Regler(Sat:0 Value: 1 Alpha 1), dies wird von der Constant nach der gewünschten Farbe eingefärbt. Um den Abstand zu begrenzen, nehmen wir zwei Regler mit der Farbe Schwarz an(Sat:0 Value: 0 Alpha 1). <p></p>
+<img src="./Bilder/Bildschirmfoto 2025-02-16 um 12.13.10.png" alt=""> <p></p>
 Über die Größe Abstandes stellen wir ein, wie viele LEDs angesteuert werden.
 Für verschiedenen Laufeffekte nutzen wir den Type ( Horizonzal, Radial und Circular (Vertical macht nur mit Pixelgrid Sinn da ). Hier empfielt es sich, ein Radio Button zu bauen um zwischen den 4 Zuständen wechseln zu können.
+<p></p>
+
+<img src="./Bilder/Bildschirmfoto 2025-02-18 um 20.34.28.png" height="50%" width="20%"><p></p>
+
+
+
+
+Was in dem Video nicht klar wird, ist wenn man LED Streifen hat die mehr als die 450 Kanäle belegt. In unserem 
+Beispiel haben wir 5m a 60 LED/m mit je 3 Kanälen, 900 Kanälen pro Schlauch. Im Pattern stellen wir die „Length“ 
+des Universums ein. Bei DMX ist immer 512 pro Universum. Ist die diese bei 450 wie im Video 20LEDs die nicht Leuchten. Der „Offset“ stellt unsere Länge des anzusteuernden Kanäle pro Universum an in diesem Fall wollen wir 450 um eine gleiche Teilung des Schlauchs zu haben.
+
+
+
 
 Weitere Effekte </p>
 Limit: Quantize Postition auf Celling 
@@ -150,5 +168,5 @@ Den "Position Step" als Regler refrenzieren damit kann man ein Aufblinken versch
 Scale UP Performance
 Veranstaltungen kann man nicht wiederholen. Heißt es braucht immer eine sorgfältige Vorbereitung vorallem.für Anfänger. Bevor man ein Veranstaltung macht sollte man im kleinen Maßstab das Licht testen. Heißt Testläufe mit den Lampen am besten schon vorprogrammieren (Patchplan) oder diesem Fall alle LED Streifen über Ethernet Anschluss 
 
-
+</div>
 </body>
