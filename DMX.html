@@ -10,9 +10,10 @@
 
     <nav> 
        
-        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a>  <a href="TOUCHDESIGNER.html"><h1>TOUCHDESIGNER</h1></a>
+        <a href="main.html"><h1>Home</h1></a>  <a href="DMX.html"><h1>DMX</h1></a> <a href="LED.html"><h1>LED</h1></a> <a href="Projekt.html"><h1>Das Projekt</h1></a>  <a href="TOUCHDESIGNER.html"><h1>TOUCHDESIGNER</h1></a>
     </nav>
     <p></p>
+    <div>
     <h1>Was ist DMX</h1><p>
     </p>
     Die weitverbreitetste Technik in der Veranstaltungsbranche, um Lampen und Nebelmaschinen steuern 
@@ -23,11 +24,69 @@
     Gleichtaktspannungen zwischen −7 V und +12 V müssen toleriert werden.
     Die Datenübertragung erfolgt binär in Form mit den Zuständen 0 und 1. Da das Maximum eines DMX-Universums 512 Kanäle umfasst (Heißt 512 Nachrichten pro Universum können auf einmal geschickt werden) und maximal 32 Empfänger versorgt werden können. Der Kabelweg darf nicht verzweigt sein und auch nicht länger als 500m für eine fehlerfreie Übertragung. Jeder Kanal verfügt über einen Wert von 0 bis 255.
 <p></p>
+</div>
 
+<div>
 <h2>3 und 5 polige XLR Stecker</h2>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMX/Signal Anschluss-Tabelle</title>
+    
+    <table>
+        <tr>
+            <th>Pol</th>
+            <th>5-polig</th>
+            <th>3-polig international</th>
+            <th>Traxon e:cue (Butler) RJ45</th>
+            <th>RJ45 T-568A</th>
+            <th>RJ45 T-568B (in Deutschland gebräuchlich)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Masse (Abschirmung)</td>
+            <td>Masse (Abschirmung)</td>
+            <td>Pin 3 (wei&szlig;/gr&uuml;n)</td>
+            <td>Pin 7 (wei&szlig;/braun) und Pin 8 (braun)</td>
+            <td>Pin 7 (wei&szlig;/braun) und Pin 8 (braun)</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Signal invertiert (DMX−, Cold)</td>
+            <td>Signal invertiert (DMX−, Cold)</td>
+            <td>Pin 1 (wei&szlig;/orange)</td>
+            <td>Pin 2 (gr&uuml;n)</td>
+            <td>Pin 2 (orange)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Signal (DMX+, Hot)</td>
+            <td>Signal (DMX+, Hot)</td>
+            <td>Pin 2 (orange)</td>
+            <td>Pin 1 (wei&szlig;/gr&uuml;n)</td>
+            <td>Pin 1 (wei&szlig;/orange)</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>optional Data 2 -</td>
+            <td></td>
+            <td>Butler + 24VDC Pin 5</td>
+            <td>Pin 3 (wei&szlig;/orange)</td>
+            <td>Pin 3 (gr&uuml;n)</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>optional Data 2 +</td>
+            <td></td>
+            <td>Butler - 24VDC Pin 6</td>
+            <td>Pin 6 (orange)</td>
+            <td>Pin 6 (wei&szlig;/gr&uuml;n)</td>
+        </tr>
+    </table>
 
-
-    <img src="./Bilder/Bildschirmfoto 2025-02-17 um 23.11.43.png" width="70%" alt="" srcset="">
+    
     <p>Verkabelung der Lampen mit DMX-Kabeln ist durch das Daisy- Chain Prinzip relativ einfach: Jeder Empfänger besitz eine Ein- und Ausgangbuchse. Ausgehend vom Sender aus (Lichtpult) wird die DMX-Leitung zu den Empfängern durchgeschleift. Es ist unwichtig an welcher Stelle sich der Empfänger befindet, die Adressierung muss lediglich eingestellt werden</p>
 <p></p>
     <div>
@@ -41,5 +100,7 @@
         
                 </p>
         <p></p>
+
+    </div>
 <link rel="stylesheet" href="LED.html">
 <link rel="stylesheet" href="Touchdesigner.html"> </header>
